@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Site Metas -->
-    <title>ThewayShop - Ecommerce Bootstrap 4 HTML Template</title>
+    <title>DigiCrop</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -41,21 +41,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="custom-select-box">
-                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
-							<option>¥ JPY</option>
-							<option>$ USD</option>
-							<option>€ EUR</option>
-						</select>
-                    </div>
-                    <div class="right-phone-box">
-                        <p>Call US :- <a href="#"> +11 900 800 100</a></p>
-                    </div>
                     <div class="our-link">
                         <ul>
-                            <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li>
-                            <li><a href="#"><i class="fas fa-location-arrow"></i> Our location</a></li>
-                            <li><a href="#"><i class="fas fa-headset"></i> Contact Us</a></li>
+                            <li><a href="my-account.html"><i class="fa fa-user s_color"></i> My Account</a></li>
+                            <!--<li><a href="#"><i class="fas fa-location-arrow"></i> Our location</a></li>
+                            <li><a href="#"><i class="fas fa-headset"></i> Contact Us</a></li>-->
                         </ul>
                     </div>
                 </div>
@@ -70,28 +60,16 @@
                         <div id="offer-box" class="carouselTicker">
                             <ul class="offer-box">
                                 <li>
-                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT80
+                                    <i class="fab fa-opencart"></i> 20% Off First Purchase Promo code: OFFT80
                                 </li>
                                 <li>
-                                    <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
+                                    <i class="fab fa-opencart"></i> 50% - 80% Off on Vegetables
                                 </li>
                                 <li>
-                                    <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
+                                    <i class="fab fa-opencart"></i> 10% Off! Shop Fruits
                                 </li>
                                 <li>
-                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT30
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now 
+                                    <i class="fab fa-opencart"></i> 50% Off! Shop Now
                                 </li>
                             </ul>
                         </div>
@@ -101,7 +79,6 @@
         </div>
     </div>
     <!-- End Main Top -->
-
     <!-- Start Main Top -->
     <header class="main-header">
         <!-- Start Navigation -->
@@ -120,7 +97,6 @@
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                         <li class="dropdown active">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
                             <ul class="dropdown-menu">
@@ -142,7 +118,7 @@
                 <div class="attr-nav">
                     <ul>
                         <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                        <li class="side-menu"><a href="#">
+                        <li class="side-menu"><a href="cart.html">
 						<i class="fa fa-shopping-bag"></i>
                             <span class="badge">3</span>
 							<p>My Cart</p>
@@ -151,7 +127,7 @@
                 </div>
                 <!-- End Atribute Navigation -->
             </div>
-            <!-- Start Side Menu -->
+            <!-- Start Side Menu 
             <div class="side">
                 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
                 <li class="cart-box">
@@ -178,7 +154,7 @@
                     </ul>
                 </li>
             </div>
-            <!-- End Side Menu -->
+            End Side Menu -->
         </nav>
         <!-- End Navigation -->
     </header>
@@ -306,12 +282,20 @@
                                     <div class="invalid-feedback"> Please select a valid country. </div>
                                 </div>
                                 <div class="col-md-4 mb-3">
-                                    <label for="state">State *</label>
+                                    <label for="state">Province *</label>
                                     <select class="wide w-100" id="state">
 									<option data-display="Select">Choose...</option>
-									<option>California</option>
+                                    <option>Eastern Cape</option>
+                                    <option>Gauteng</option>
+                                    <option>Limpopo</option>
+                                    <option>Freestate</option>
+                                    <option>KwaZulu-Natal</option>
+                                    <option>Mpumalanga</option>
+                                    <option>Northern Cape</option>
+                                    <option>North West</option>
+                                    <option>Western Cape</option>
 								</select>
-                                    <div class="invalid-feedback"> Please provide a valid state. </div>
+                                    <div class="invalid-feedback"> Please provide a province. </div>
                                 </div>
                                 <div class="col-md-3 mb-3">
                                     <label for="zip">Zip *</label>
@@ -393,14 +377,14 @@
                                     <div class="custom-control custom-radio">
                                         <input id="shippingOption1" name="shipping-option" class="custom-control-input" checked="checked" type="radio">
                                         <label class="custom-control-label" for="shippingOption1">Standard Delivery</label> <span class="float-right font-weight-bold">FREE</span> </div>
-                                    <div class="ml-4 mb-2 small">(3-7 business days)</div>
+                                    <div class="ml-4 mb-2 small">(5 business days)</div>
                                     <div class="custom-control custom-radio">
                                         <input id="shippingOption2" name="shipping-option" class="custom-control-input" type="radio">
-                                        <label class="custom-control-label" for="shippingOption2">Express Delivery</label> <span class="float-right font-weight-bold">$10.00</span> </div>
-                                    <div class="ml-4 mb-2 small">(2-4 business days)</div>
+                                        <label class="custom-control-label" for="shippingOption2">Express Delivery</label> <span class="float-right font-weight-bold">R25.00</span> </div>
+                                    <div class="ml-4 mb-2 small">(3 business days)</div>
                                     <div class="custom-control custom-radio">
                                         <input id="shippingOption3" name="shipping-option" class="custom-control-input" type="radio">
-                                        <label class="custom-control-label" for="shippingOption3">Next Business day</label> <span class="float-right font-weight-bold">$20.00</span> </div>
+                                        <label class="custom-control-label" for="shippingOption3">Next Business day</label> <span class="float-right font-weight-bold">R50.00</span> </div>
                                 </div>
                             </div>
                         </div>
@@ -411,18 +395,18 @@
                                 </div>
                                 <div class="rounded p-2 bg-light">
                                     <div class="media mb-2 border-bottom">
-                                        <div class="media-body"> <a href="detail.html"> Lorem ipsum dolor sit amet</a>
-                                            <div class="small text-muted">Price: $80.00 <span class="mx-2">|</span> Qty: 1 <span class="mx-2">|</span> Subtotal: $80.00</div>
+                                        <div class="media-body"> <a href="detail.html"> Carrots</a>
+                                            <div class="small text-muted">Price: R49.00 <span class="mx-2">|</span> Qty: 1 <span class="mx-2">|</span> Subtotal: R49.00</div>
                                         </div>
                                     </div>
                                     <div class="media mb-2 border-bottom">
-                                        <div class="media-body"> <a href="detail.html"> Lorem ipsum dolor sit amet</a>
-                                            <div class="small text-muted">Price: $60.00 <span class="mx-2">|</span> Qty: 1 <span class="mx-2">|</span> Subtotal: $60.00</div>
+                                        <div class="media-body"> <a href="detail.html"> Tomatoes</a>
+                                            <div class="small text-muted">Price: R30.00 <span class="mx-2">|</span> Qty: 3 <span class="mx-2">|</span> Subtotal: R90.00</div>
                                         </div>
                                     </div>
                                     <div class="media mb-2">
-                                        <div class="media-body"> <a href="detail.html"> Lorem ipsum dolor sit amet</a>
-                                            <div class="small text-muted">Price: $40.00 <span class="mx-2">|</span> Qty: 1 <span class="mx-2">|</span> Subtotal: $40.00</div>
+                                        <div class="media-body"> <a href="detail.html"> Grapes</a>
+                                            <div class="small text-muted">Price: R25.00 <span class="mx-2">|</span> Qty: 2 <span class="mx-2">|</span> Subtotal: R50.00</div>
                                         </div>
                                     </div>
                                 </div>
@@ -430,39 +414,28 @@
                         </div>
                         <div class="col-md-12 col-lg-12">
                             <div class="order-box">
-                                <div class="title-left">
-                                    <h3>Your order</h3>
-                                </div>
-                                <div class="d-flex">
-                                    <div class="font-weight-bold">Product</div>
-                                    <div class="ml-auto font-weight-bold">Total</div>
-                                </div>
-                                <hr class="my-1">
+                                <h3>Order summary</h3>
                                 <div class="d-flex">
                                     <h4>Sub Total</h4>
-                                    <div class="ml-auto font-weight-bold"> $ 440 </div>
+                                    <div class="ml-auto font-weight-bold"> R189.00 </div>
                                 </div>
                                 <div class="d-flex">
                                     <h4>Discount</h4>
-                                    <div class="ml-auto font-weight-bold"> $ 40 </div>
+                                    <div class="ml-auto font-weight-bold"> R18.09 </div>
                                 </div>
                                 <hr class="my-1">
                                 <div class="d-flex">
-                                    <h4>Coupon Discount</h4>
-                                    <div class="ml-auto font-weight-bold"> $ 10 </div>
+                                    <h4>VAT</h4>
+                                    <div class="ml-auto font-weight-bold"> R28.35 </div>
                                 </div>
                                 <div class="d-flex">
-                                    <h4>Tax</h4>
-                                    <div class="ml-auto font-weight-bold"> $ 2 </div>
-                                </div>
-                                <div class="d-flex">
-                                    <h4>Shipping Cost</h4>
-                                    <div class="ml-auto font-weight-bold"> Free </div>
+                                    <h4>Delivery Cost</h4>
+                                    <div class="ml-auto font-weight-bold"> R25.00</div>
                                 </div>
                                 <hr>
                                 <div class="d-flex gr-total">
                                     <h5>Grand Total</h5>
-                                    <div class="ml-auto h5"> $ 388 </div>
+                                    <div class="ml-auto h5"> R260.44 </div>
                                 </div>
                                 <hr> </div>
                         </div>
@@ -576,7 +549,23 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="footer-link-contact">
+                                <h4>Contact Us</h4>
+                                <ul>
+                                    <li>
+                                        <p><i class="fas fa-map-marker-alt"></i> South Africa </p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+27 767 969 942">+27 767 969 942</a></p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fas fa-envelope"></i>Email: <a href="mailto:info@digicrop.co.za">info@digicrop.co.za</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+					<!--<div class="col-lg-4 col-md-12 col-sm-12">
 						<div class="footer-top-box">
 							<h3>Newsletter</h3>
 							<form class="newsletter-box">
@@ -587,8 +576,8 @@
 								<button class="btn hvr-hover" type="submit">Submit</button>
 							</form>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12">
+					</div>-->
+					<!--<div class="col-lg-4 col-md-12 col-sm-12">
 						<div class="footer-top-box">
 							<h3>Social Media</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -603,17 +592,16 @@
                             </ul>
 						</div>
 					</div>
-				</div>
-				<hr>
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 col-sm-12">
+				</div>-->
+                
+                    <!--<div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-widget">
                             <h4>About Freshshop</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> 							
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
+                    </div>-->
+                    <!--<div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-link">
                             <h4>Information</h4>
                             <ul>
@@ -625,23 +613,7 @@
                                 <li><a href="#">Delivery Information</a></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-link-contact">
-                            <h4>Contact Us</h4>
-                            <ul>
-                                <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>Address: Michael I. Days 3756 <br>Preston Street Wichita,<br> KS 67213 </p>
-                                </li>
-                                <li>
-                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1-888 705 770</a></p>
-                                </li>
-                                <li>
-                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">contactinfo@gmail.com</a></p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -650,8 +622,8 @@
 
     <!-- Start copyright  -->
     <div class="footer-copyright">
-        <p class="footer-company">All Rights Reserved. &copy; 2018 <a href="#">ThewayShop</a> Design By :
-            <a href="https://html.design/">html design</a></p>
+        <p class="footer-company">All Rights Reserved. &copy; 2021 <!--<a href="#">ThewayShop</a> Design By :
+            <a href="https://html.design/">html design</a></p>-->
     </div>
     <!-- End copyright  -->
 
